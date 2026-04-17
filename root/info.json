@@ -1,7 +1,7 @@
 {
     "manifest":{
         "last_updated":"26.04.18",
-        "release":"1"
+        "release":"2"
     },
     "redirections":{
         "root":"https://tromosm.ct.ws/",
@@ -19,7 +19,7 @@
         "projects":{
             "easypycode":"https://tromosm.ct.ws/projects/easypycode/documentation/",
             "cryptivisx":"https://tromosm.ct.ws/projects/cryptivisx/",
-            "frosted-google":"https://tromosm.ct.ws/projects/frosted-google/",
+            "frosted-google":"https://tromosm.ct.ws/projects/frosted-google/"
         },
         "share":"https://tromosm.ct.ws/share/"
     }
