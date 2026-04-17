@@ -1,0 +1,302 @@
+/*
+Copyright 2026 tromoSM
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+tromoSM/YT-Premium-Patch 
+main.js
+
+v1.3
+*/
+if(location.hostname!=="www.youtube.com"){
+    throw ""
+}
+const countr=document.createElement("script")
+countr.textContent=`
+var YTPremiumPatch_SessionADCount=0
+if(localStorage.getItem("tromoSM_YTPREMIUMPATCH_DONOTCHANGE")){
+var YTPremiumPatch_ADCount=parseInt(localStorage.getItem("tromoSM_YTPREMIUMPATCH_DONOTCHANGE"))
+}
+else{
+localStorage.setItem("tromoSM_YTPREMIUMPATCH_DONOTCHANGE",0)
+var YTPremiumPatch_ADCount=0
+}
+function add(){
+    YTPremiumPatch_ADCount++
+    YTPremiumPatch_SessionADCount++
+    localStorage.setItem("tromoSM_YTPREMIUMPATCH_DONOTCHANGE",YTPremiumPatch_ADCount)
+}
+console.log(YTPremiumPatch_ADCount)
+console.log(YTPremiumPatch_SessionADCount)
+let coun=document.createElement("button")
+document.body.appendChild(coun)
+coun.addEventListener('click',add)
+coun.setAttribute('tromoSM_YTPATCH',"counter")`
+
+document.documentElement.appendChild(countr)
+
+function addd(){
+    if(document.querySelector(`[tromoSM_YTPATCH="counter"]`)){
+      document.querySelector(`[tromoSM_YTPATCH="counter"]`).click()
+    }
+    else{
+    console.log("%c  ▶ FAIL: ADS ARE NOT BEING COUNTED ","font-family:Roboto,Arial,SF Pro;background:linear-gradient(90deg,red,red);color:white;font-size:17px;border-radius:50px;") 
+    }
+}
+console.log("%c  ▶ YT Premium by tromoSM  ","font-family:Roboto,Arial,SF Pro;background:linear-gradient(90deg,#FF0033,#FF0035);color:white;font-size:20px;border-radius:50px;")
+console.log("")
+if(localStorage.getItem("tromoSM_YTPREMIUMPATCH_DONOTCHANGE")){
+console.log(`%c  ▶ ${localStorage.getItem("tromoSM_YTPREMIUMPATCH_DONOTCHANGE")} Ads blocked since install  `,"font-family:Roboto,Arial,SF Pro;background:linear-gradient(90deg,#FF0033,#FF0035);color:white;font-size:17px;border-radius:50px;")
+}
+
+window.wait=function(dih){
+        return new Promise(resolve=>setTimeout(resolve,dih))
+}
+window.dih=async function(){
+    while(!document.querySelector('[id^="youtube-paths_yt"]')){
+        await wait(500)
+    }
+    document.querySelector('[id^="youtube-paths_yt"]').replaceChildren()
+    const p=[
+    "M32.1819 2.10016V18.9002H34.7619V12.9102H35.4519C38.8019 12.9102 40.5619 11.1102 40.5619 7.57016V6.88016C40.5619 3.31016 39.0019 2.10016 35.7219 2.10016H32.1819ZM37.8619 7.63016C37.8619 10.0002 37.1419 11.0802 35.4019 11.0802H34.7619V3.95016H35.4519C37.4219 3.95016 37.8619 4.76016 37.8619 7.13016V7.63016Z",
+    "M41.982 18.9002H44.532V10.0902C44.952 9.37016 45.992 9.05016 47.302 9.32016L47.462 6.33016C47.292 6.31016 47.142 6.29016 47.002 6.29016C45.802 6.29016 44.832 7.20016 44.342 8.86016H44.162L43.952 6.54016H41.982V18.9002Z",
+    "M55.7461 11.5002C55.7461 8.52016 55.4461 6.31016 52.0161 6.31016C48.7861 6.31016 48.0661 8.46016 48.0661 11.6202V13.7902C48.0661 16.8702 48.7261 19.1102 51.9361 19.1102C54.4761 19.1102 55.7861 17.8402 55.6361 15.3802L53.3861 15.2602C53.3561 16.7802 53.0061 17.4002 51.9961 17.4002C50.7261 17.4002 50.6661 16.1902 50.6661 14.3902V13.5502H55.7461V11.5002ZM51.9561 7.97016C53.1761 7.97016 53.2661 9.12016 53.2661 11.0702V12.0802H50.6661V11.0702C50.6661 9.14016 50.7461 7.97016 51.9561 7.97016Z",
+    "M60.1945 18.9002V8.92016C60.5745 8.39016 61.1945 8.07016 61.7945 8.07016C62.5645 8.07016 62.8445 8.61016 62.8445 9.69016V18.9002H65.5045L65.4845 8.93016C65.8545 8.37016 66.4845 8.04016 67.1045 8.04016C67.7745 8.04016 68.1445 8.61016 68.1445 9.69016V18.9002H70.8045V9.49016C70.8045 7.28016 70.0145 6.27016 68.3445 6.27016C67.1845 6.27016 66.1945 6.69016 65.2845 7.67016C64.9045 6.76016 64.1545 6.27016 63.0845 6.27016C61.8745 6.27016 60.7345 6.79016 59.9345 7.76016H59.7845L59.5945 6.54016H57.5445V18.9002H60.1945Z",
+    "M74.0858 4.97016C74.9858 4.97016 75.4058 4.67016 75.4058 3.43016C75.4058 2.27016 74.9558 1.91016 74.0858 1.91016C73.2058 1.91016 72.7758 2.23016 72.7758 3.43016C72.7758 4.67016 73.1858 4.97016 74.0858 4.97016ZM72.8658 18.9002H75.3958V6.54016H72.8658V18.9002Z",
+    "M79.9516 19.0902C81.4116 19.0902 82.3216 18.4802 83.0716 17.3802H83.1816L83.2916 18.9002H85.2816V6.54016H82.6416V16.4702C82.3616 16.9602 81.7116 17.3202 81.1016 17.3202C80.3316 17.3202 80.0916 16.7102 80.0916 15.6902V6.54016H77.4616V15.8102C77.4616 17.8202 78.0416 19.0902 79.9516 19.0902Z",
+    "M90.0031 18.9002V8.92016C90.3831 8.39016 91.0031 8.07016 91.6031 8.07016C92.3731 8.07016 92.6531 8.61016 92.6531 9.69016V18.9002H95.3131L95.2931 8.93016C95.6631 8.37016 96.2931 8.04016 96.9131 8.04016C97.5831 8.04016 97.9531 8.61016 97.9531 9.69016V18.9002H100.613V9.49016C100.613 7.28016 99.8231 6.27016 98.1531 6.27016C96.9931 6.27016 96.0031 6.69016 95.0931 7.67016C94.7131 6.76016 93.9631 6.27016 92.8931 6.27016C91.6831 6.27016 90.5431 6.79016 89.7431 7.76016H89.5931L89.4031 6.54016H87.3531V18.9002H90.0031Z"
+    ]
+    p.forEach(dih=>{
+        let d= document.createElementNS("http://www.w3.org/2000/svg","path")
+        d.setAttribute('d',dih)
+        document.querySelector('[id^="youtube-paths_yt"]').appendChild(d)
+    })
+    document.querySelector('#logo-icon').style.width='110px'
+}
+function refreshdih(){
+    if(document.querySelector(".html5-video-player.ad-showing")){
+        if(document.querySelector(".ytwPanelAdHeaderImageLockupViewModelHost")){
+            document.querySelectorAll(".ytwPanelAdHeaderImageLockupViewModelHost").forEach(sidead=>{
+              try{
+                sidead.remove()
+                addd()
+                console.log("%c  ▶ Removed ad card   ","font-family:Roboto,Arial,SF Pro;background:linear-gradient(90deg,#FF0033,#FF0035);color:white;font-size:17px;border-radius:50px;")
+              }
+              catch(e){
+                console.warn("%c  ▶ WARNING: Removed via visibility   ","font-family:Roboto,Arial,SF Pro;background:linear-gradient(90deg,red,red);color:white;font-size:17px;border-radius:50px;")
+                sidead.style.display='none'
+                console.log("%c  ▶ Removed ad card   ","font-family:Roboto,Arial,SF Pro;background:linear-gradient(90deg,#FF0033,#FF0035);color:white;font-size:17px;border-radius:50px;")
+              }
+            })
+        }
+        if(document.querySelector("#content.ytd-engagement-panel-section-list-renderer")){
+            document.querySelectorAll("#content.ytd-engagement-panel-section-list-renderer").forEach(adsurvey=>{
+                try{
+                    adsurvey.remove()
+                    addd()
+                }
+                catch(dih){
+                console.warn(`%c  ▶ WARNING: Removed via visibility : ${dih}   `,"font-family:Roboto,Arial,SF Pro;background:linear-gradient(90deg,red,red);color:white;font-size:17px;border-radius:50px;")
+                adsurvey.style.display="none"
+                }
+                finally{
+                console.log("%c  ▶ Removed ad survey   ","font-family:Roboto,Arial,SF Pro;background:linear-gradient(90deg,#FF0033,#FF0035);color:white;font-size:17px;border-radius:50px;")
+                }
+            })
+        }
+        if(document.querySelector(`[class="ytp-ad-player-overlay-layout__player-card-container"]`)){
+            document.querySelectorAll(`[class="ytp-ad-player-overlay-layout__player-card-container"]`).forEach(advatar=>{
+                try{
+                    advatar.remove()
+                    addd()
+                }
+                catch(dih){
+                console.warn(`%c  ▶ WARNING: Removed via visibility : ${dih}   `,"font-family:Roboto,Arial,SF Pro;background:linear-gradient(90deg,red,red);color:white;font-size:17px;border-radius:50px;")
+                advatar.style.display="none"
+                }
+                finally{
+                console.log("%c  ▶ Removed ad overlay card   ","font-family:Roboto,Arial,SF Pro;background:linear-gradient(90deg,#FF0033,#FF0035);color:white;font-size:17px;border-radius:50px;")
+                }
+            })
+        }
+        if(document.querySelector(`.ytwTopBannerImageTextIconButtonedLayoutViewModelHost`)){
+            document.querySelectorAll.forEach(sidehostinfo=>{
+                try{
+                    sidehostinfo.remove()
+                    addd()
+                }
+                catch(dih){
+                console.warn(`%c  ▶ WARNING: Removed via visibility : ${dih}   `,"font-family:Roboto,Arial,SF Pro;background:linear-gradient(90deg,red,red);color:white;font-size:17px;border-radius:50px;")
+                sidehostinfo.style.display="none"
+                }
+                finally{
+                console.log("%c  ▶ Removed Ad host info from sidebar   ","font-family:Roboto,Arial,SF Pro;background:linear-gradient(90deg,#FF0033,#FF0035);color:white;font-size:17px;border-radius:50px;")
+                }
+            })
+        }
+ document.querySelectorAll(".html5-video-player.ad-showing").forEach(dih=>{
+    if(document.querySelector('[id^="skip-button"]')){
+       document.querySelectorAll('[id^="skip-button"]').forEach(dih=>{
+        dih.click()
+       console.log("%c  ▶ Skipping ad   ","font-family:Roboto,Arial,SF Pro;background:linear-gradient(90deg,#FF0033,#FF0035);color:white;font-size:17px;border-radius:50px;")
+       })
+    }
+    dih.querySelector('video').playbackRate=100
+    console.log("%c  ▶ Speeding up the ad   ","font-family:Roboto,Arial,SF Pro;background:linear-gradient(90deg,#FF0033,#FF0035);color:white;font-size:17px;border-radius:50px;")
+    document.querySelector(".html5-video-player.ad-showing").querySelector('video').style.filter='blur(10px) brightness(0.9)' 
+    addd()
+ }) 
+}
+else{
+    document.querySelector(`.html5-video-player`).querySelector('video').playbackRate=1
+    document.querySelector(`.html5-video-player`).querySelector('video').style.filter='none' 
+}
+}
+const op={
+    attributes:true
+}
+function win(m,ob){
+    m.forEach(function(iguessbro){
+        if(iguessbro.type=='attributes'&&iguessbro.attributeName=="class"){
+            refreshdih()
+        }
+    })
+}
+const o=new MutationObserver(win)
+ async function yo(){
+     while(!document.querySelector(`.html5-video-player`)){
+        await wait(600)
+     }
+     o.observe(document.querySelector(`.html5-video-player`),op)
+     console.log("%c  ▶ Applying patch   ","font-family:Roboto,Arial,SF Pro;background:linear-gradient(90deg,#FF0033,#FF0035);color:white;font-size:17px;border-radius:50px;")
+    }
+    yo()
+async function StudentBann(){
+    if(!document.querySelector('#statement-banner-content.ytd-statement-banner-renderer')){
+        await wait(600)
+    }
+    document.querySelectorAll(`#statement-banner-content.ytd-statement-banner-renderer`).forEach(sB=>{
+        try{
+            sB.remove()
+        }
+        catch(dih){
+            sB.style.display='none'
+            console.warn(`%c  ▶ WARNING: Removed via visibility - ${dih}`,"font-family:Roboto,Arial,SF Pro;background:linear-gradient(90deg,red,red);color:white;font-size:17px;border-radius:50px;")
+        }
+        finally{
+            addd()
+        }
+    })
+}
+StudentBann()
+async function smartRenderer(){
+    if(!document.querySelector(`.ytwTopBannerImageTextIconButtonedLayoutViewModelHost `)){
+        await wait(600)
+    }
+    document.querySelectorAll(`.ytwTopBannerImageTextIconButtonedLayoutViewModelHost `).forEach(sR=>{
+        try{
+            sR.remove()
+        }
+        catch(dih){
+            sR.style.display="none"
+            console.warn(`%c  ▶ WARNING: Removed via visibility - ${dih}`,"font-family:Roboto,Arial,SF Pro;background:linear-gradient(90deg,red,red);color:white;font-size:17px;border-radius:50px;")
+        }
+        finally{
+            addd()
+        }
+    })
+}
+smartRenderer()
+/*
+rem yt-simple-endpoint style-scope ytd-guide-entry-renderer if ins title style-scope ytd-guide-entry-renderer 'Youtube Premium'
+ */
+let sidOPBO=false
+async function sideOpt(){
+    if(!document.querySelector(`[class="title style-scope ytd-guide-entry-renderer"]`)){
+        await wait(500)
+        console.error('wa')
+    }
+    document.querySelectorAll(`[class="title style-scope ytd-guide-entry-renderer"]`).forEach(inT=>{
+            if(inT.innerHTML=='YouTube Premium'){
+                try{
+                  inT.closest(`[id="endpoint"]`).remove()
+                  sidOPBO=true
+                  console.log('suc')
+                 }
+                catch(dih){
+                  console.error(dih)
+                 } 
+            }
+    })
+}
+sideOpt()
+async function visADs(){
+    if(!document.querySelector(`#rendering-content.ytd-in-feed-ad-layout-renderer`)){
+    await wait(500)
+    }
+    document.querySelectorAll(`#rendering-content.ytd-in-feed-ad-layout-renderer`).forEach(yo=>{
+        if(yo.querySelector(`[class="yt-core-attributed-string ytwAdDetailsLineViewModelHostTextStyleStandard yt-core-attributed-string--white-space-pre-wrap"]`)){
+            console.log(`%c  ▶  removed ${yo.querySelector(`[class="yt-core-attributed-string ytwAdDetailsLineViewModelHostTextStyleStandard yt-core-attributed-string--white-space-pre-wrap"]`).textContent}'s ad`   ,"font-family:Roboto,Arial,SF Pro;background:linear-gradient(90deg,#FF0033,#FF0035);color:white;font-size:17px;border-radius:50px;")
+        } 
+        try{
+        yo.remove()
+        }
+        catch(dih){
+        yo.style.display='none'
+        console.warn("%c  ▶ WARNING: Removed via visibility   ","font-family:Roboto,Arial,SF Pro;background:linear-gradient(90deg,red,red);color:white;font-size:17px;border-radius:50px;")
+        }
+        finally{
+            addd()
+        }
+    })   
+}
+async function infeedBAN(){
+    if(!document.querySelector(`#content.ytd-rich-section-renderer`)){
+        await wait(500)
+    }
+    document.querySelector(`#content.ytd-rich-section-renderer`).forEach(sybau=>{
+     try{
+        sybau.remove()
+     }
+     catch(dih){
+        sybau.display="none"
+        console.warn("%c  ▶ WARNING: Removed via visibility   ","font-family:Roboto,Arial,SF Pro;background:linear-gradient(90deg,red,red);color:white;font-size:17px;border-radius:50px;")
+     }
+     finally{
+            console.log(`%c  ▶  removed premium ad banner`   ,"font-family:Roboto,Arial,SF Pro;background:linear-gradient(90deg,#FF0033,#FF0035);color:white;font-size:17px;border-radius:50px;")
+             addd()
+     }
+    })
+}
+infeedBAN()
+
+visADs()
+window.addEventListener("mousemove",visADs)
+async function rparseLOGO(){
+ while(!document.querySelector('#logo-icon')){
+    await wait(500)
+    console.error("%c  ▶ FAIL: unable to add premium logo   ","font-family:Roboto,Arial,SF Pro;background:linear-gradient(90deg,red,red);color:white;font-size:17px;border-radius:50px;") 
+ }
+    await dih()
+    console.log("%c  ▶ Adding premium logo   ","font-family:Roboto,Arial,SF Pro;background:linear-gradient(90deg,#FF0033,#FF0035);color:white;font-size:17px;border-radius:50px;")
+}
+rparseLOGO()
+window.addEventListener('click',yo)
+window.addEventListener('mousemove',function(){
+if(sidOPBO==false){
+    sideOpt()
+}
+else{
+    console.log('')
+}
+})
