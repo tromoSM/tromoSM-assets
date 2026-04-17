@@ -1,1 +1,26 @@
-
+{
+    "manifest":{
+        "last_updated":"26.04.18",
+        "release":"1"
+    },
+    "redirections":{
+        "root":"https://tromosm.ct.ws/",
+        "feedback":"https://tromosm.ct.ws/?feedback=true",
+        "projects":"https://tromosm.ct.ws/#project",
+        "404":"https://tromosm.ct.ws/404",
+        "403":"https://tromosm.ct.ws/403.html",
+        "503":"https://tromosm.ct.ws/503.html",
+        "400":"https://tromosm.ct.ws/400.html",
+        "401":"https://tromosm.ct.ws/401.html"
+    },
+    "pages":{
+        "root":"https://tromosm.ct.ws/",
+        "feedback":"https://tromosm.ct.ws/?feedback=true",
+        "projects":{
+            "easypycode":"https://tromosm.ct.ws/projects/easypycode/documentation/",
+            "cryptivisx":"https://tromosm.ct.ws/projects/cryptivisx/",
+            "frosted-google":"https://tromosm.ct.ws/projects/frosted-google/",
+        },
+        "share":"https://tromosm.ct.ws/share/"
+    }
+}
