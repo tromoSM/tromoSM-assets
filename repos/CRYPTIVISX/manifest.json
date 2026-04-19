@@ -1,0 +1,33 @@
+{
+    "manifest":{
+        "last_updated":"26.04.19",
+        "release":"1"
+    },
+    "main":{
+        "version":"v1.1",
+        "compatibleWith":[],
+        "github":"https://github.com/tromoSM/CryptivisX",
+        "page":"https://tromosm.ct.ws/projects/cryptivisx/"
+    },
+    "icon":{
+        "type":"transparent"
+    },
+    "theme":{
+        "hue": 0,
+        "BW":1,
+        "color1":"#",
+        "color2":"#"
+    },
+    "downloads":{
+        "downloads":true,
+        "assets":[
+           ["https://github.com/tromoSM/CryptivisX/releases/download/v1.1/CryptivisX-windows-installer.exe","CryptivisX windows installer"]
+        ],
+        "winget":"CryptivisX"
+    },
+    "links":{
+        "onclick:icon":"https://tromosm.ct.ws/projects/cryptivisx/"
+    },
+    "license":"Apache 2.0",
+    "license_link":"http://www.apache.org/licenses/LICENSE-2.0"
+}
