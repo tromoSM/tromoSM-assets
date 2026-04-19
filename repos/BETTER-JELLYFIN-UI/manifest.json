@@ -1,1 +1,30 @@
-
+{
+    "manifest":{
+        "last_updated":"26.04.19",
+        "release":"1"
+    },
+    "main":{
+        "version":"v1.10",
+        "compatibleWith":[]
+    },
+    "icon":{
+        "type":"transparent"
+    },
+    "theme":{
+        "hue": 50,
+        "BW":0,
+        "color1":"#9f5fc5",
+        "color2":"#099dd7"
+    },
+    "downloads":{
+        "downloads":true,
+        "assets":[
+           ["https://github.com/tromoSM/better-jellyfin-ui/releases/download/v1.10/theme.css","theme.css"]
+        ]
+    },
+    "links":{
+        "onclick:icon":"https://github.com/tromoSM/better-jellyfin-ui"
+    },
+    "license":"Apache 2.0",
+    "license_link":"http://www.apache.org/licenses/LICENSE-2.0"
+}
