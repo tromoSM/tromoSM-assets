@@ -6,6 +6,8 @@
     "main":{
         "version":"v1.10",
         "compatibleWith":[]
+        "github":"https://github.com/tromoSM/better-jellyfin-ui",
+        "page":""
     },
     "icon":{
         "type":"transparent"
