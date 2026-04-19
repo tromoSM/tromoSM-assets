@@ -15,8 +15,8 @@
     "theme":{
         "hue": 0,
         "BW":1,
-        "color1":"#",
-        "color2":"#"
+        "color1":"#a2a2a2",
+        "color2":"#5e5e5e"
     },
     "downloads":{
         "downloads":true,
