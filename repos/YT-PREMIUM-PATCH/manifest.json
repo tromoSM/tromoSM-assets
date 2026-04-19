@@ -1,1 +1,34 @@
-
+{
+    "manifest":{
+        "last_updated":"26.04.19",
+        "release":"1"
+    },
+    "main":{
+        "version":"v1.3",
+        "compatibleWith":[
+            ["2.20260409.02.00",["yt-web"]]
+        ],
+        "github":"https://github.com/tromoSM/better-jellyfin-ui",
+        "page":"https://addons.mozilla.org/addon/yt-premium/"
+    },
+    "icon":{
+        "type":"rounded"
+    },
+    "theme":{
+        "hue": 122,
+        "BW":0,
+        "color1":"#fe0033",
+        "color2":"#ff002e"
+    },
+    "downloads":{
+        "downloads":true,
+        "assets":[
+           ["https://github.com/tromoSM/YT-Premium-Patch/releases/download/v1.2/main.js","main.js"]
+        ]
+    },
+    "links":{
+        "onclick:icon":"https://github.com/tromoSM/YT-Premium-Patch/"
+    },
+    "license":"Apache 2.0",
+    "license_link":"http://www.apache.org/licenses/LICENSE-2.0"
+}
