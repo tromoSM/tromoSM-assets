@@ -1,0 +1,31 @@
+{
+    "manifest":{
+        "last_updated":"26.05.09",
+        "release":"1"
+    },
+    "main":{
+        "version":"v0.9 pre",
+        "compatibleWith":[],
+        "github":"https://github.com/tromoSM/FluxLAN",
+        "page":""
+    },
+    "icon":{
+        "type":"transparent"
+    },
+    "theme":{
+        "hue": 0,
+        "BW":1,
+        "color1":"#a2a2a2",
+        "color2":"#5e5e5e"
+    },
+    "downloads":{
+        "downloads":true,
+        "assets":[],
+        "winget":""
+    },
+    "links":{
+        "onclick:icon":"https://github.com/tromoSM/FluxLAN"
+    },
+    "license":"Apache 2.0",
+    "license_link":"http://www.apache.org/licenses/LICENSE-2.0"
+}
