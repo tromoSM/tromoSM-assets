@@ -16,7 +16,8 @@
         "update_date":"26.05.09",
         "update_main":"features",
         "update_features":["example","example","example","example"],
-        "security_patch":false
+        "security_patch":false,
+        "update_url":"https://file-examples.com/storage/fe5e0ac23369ff43fa166e7/2017/02/zip_10MB.zip"
     },
     "icon":{
         "type":"transparent"
