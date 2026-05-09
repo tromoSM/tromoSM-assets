@@ -5,7 +5,7 @@
     },
     "main":{
         "version":"v0.9 pre",
-        "version_release":"2",
+        "version_release":"0",
         "compatibleWith":[],
         "github":"https://github.com/tromoSM/FluxLAN",
         "page":""
@@ -13,11 +13,11 @@
     "update":{
         "update-count": 0,
         "beta":false,
-        "update_date":"26.05.09",
-        "update_main":"features",
-        "update_features":["example","example","example","example"],
+        "update_date":"",
+        "update_main":"",
+        "update_features":[],
         "security_patch":false,
-        "update_url":"https://file-examples.com/storage/fe5e0ac23369ff43fa166e7/2017/02/zip_10MB.zip"
+        "update_url":""
     },
     "icon":{
         "type":"transparent"
