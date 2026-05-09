@@ -5,6 +5,7 @@
     },
     "main":{
         "version":"v0.9 pre",
+        "version_release":"2",
         "compatibleWith":[],
         "github":"https://github.com/tromoSM/FluxLAN",
         "page":""
