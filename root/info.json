@@ -1,26 +1,26 @@
 {
     "manifest":{
-        "last_updated":"26.04.18",
-        "release":"2"
+        "last_updated":"26.05.21",
+        "release":"3"
     },
     "redirections":{
-        "root":"https://tromosm.ct.ws/",
-        "feedback":"https://tromosm.ct.ws/?feedback=true",
-        "projects":"https://tromosm.ct.ws/#project",
-        "404":"https://tromosm.ct.ws/404",
-        "403":"https://tromosm.ct.ws/403.html",
-        "503":"https://tromosm.ct.ws/503.html",
-        "400":"https://tromosm.ct.ws/400.html",
-        "401":"https://tromosm.ct.ws/401.html"
+        "root":"https://tromosm.gt.tc/",
+        "feedback":"https://tromosm.gt.tc/?feedback=true",
+        "projects":"https://tromosm.gt.tc/#project",
+        "404":"https://tromosm.gt.tc/404",
+        "403":"https://tromosm.gt.tc/403.html",
+        "503":"https://tromosm.gt.tc/503.html",
+        "400":"https://tromosm.gt.tc/400.html",
+        "401":"https://tromosm.gt.tc/401.html"
     },
     "pages":{
-        "root":"https://tromosm.ct.ws/",
-        "feedback":"https://tromosm.ct.ws/?feedback=true",
+        "root":"https://tromosm.gt.tc/",
+        "feedback":"https://tromosm.gt.tc/?feedback=true",
         "projects":{
-            "easypycode":"https://tromosm.ct.ws/projects/easypycode/documentation/",
-            "cryptivisx":"https://tromosm.ct.ws/projects/cryptivisx/",
-            "frosted-google":"https://tromosm.ct.ws/projects/frosted-google/"
+            "easypycode":"https://tromosm.gt.tc/projects/easypycode/documentation/",
+            "cryptivisx":"https://tromosm.gt.tc/projects/cryptivisx/",
+            "frosted-google":"https://tromosm.gt.tc/projects/frosted-google/"
         },
-        "share":"https://tromosm.ct.ws/share/"
+        "share":"https://tromosm.gt.tc/share/"
     }
 }
