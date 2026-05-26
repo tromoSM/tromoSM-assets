@@ -36,6 +36,20 @@
     "links":{
         "onclick:icon":"https://github.com/tromoSM/FluxLAN"
     },
+    "assets":{
+        "icons":{
+            "white":"https://github.com/tromoSM/FluxLAN/blob/main/static/Assets/favicon-l.png?raw=true",
+            "black":"https://github.com/tromoSM/FluxLAN/blob/main/static/Assets/favicon.png?raw=true"
+        },
+        "logo":{
+            "white":"https://github.com/tromoSM/FluxLAN/blob/main/static/Assets/logo-w.png?raw=true",
+            "black":"https://github.com/tromoSM/FluxLAN/blob/main/static/Assets/logo.png?raw=true",
+            "dynamic":{
+                "link":"https://raw.githubusercontent.com/tromoSM/FluxLAN/4e8491abb6d56dcba3cae3703205b580abd55914/static/Assets/logo.svg",
+                "type":"svg"
+            }
+        }
+    },
     "license":"Apache 2.0",
     "license_link":"http://www.apache.org/licenses/LICENSE-2.0"
 }
