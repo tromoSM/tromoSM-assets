@@ -1,7 +1,7 @@
 {
     "manifest":{
         "last_updated":"26.05.09",
-        "release":"1"
+        "release":"2"
     },
     "main":{
         "version":"v0.9 pre",
@@ -42,8 +42,8 @@
             "black":"https://github.com/tromoSM/FluxLAN/blob/main/static/Assets/favicon.png?raw=true"
         },
         "logo":{
-            "white":"https://github.com/tromoSM/FluxLAN/blob/main/static/Assets/logo-w.png?raw=true",
-            "black":"https://github.com/tromoSM/FluxLAN/blob/main/static/Assets/logo.png?raw=true",
+            "white":"https://raw.githubusercontent.com/tromoSM/FluxLAN/refs/heads/main/static/Assets/logo-w.png",
+            "black":"https://raw.githubusercontent.com/tromoSM/FluxLAN/refs/heads/main/static/Assets/logo.png",
             "dynamic":{
                 "link":"https://raw.githubusercontent.com/tromoSM/FluxLAN/4e8491abb6d56dcba3cae3703205b580abd55914/static/Assets/logo.svg",
                 "type":"svg"
