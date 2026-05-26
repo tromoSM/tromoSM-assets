@@ -1,7 +1,7 @@
 {
     "manifest":{
         "last_updated":"26.05.26",
-        "release":"4"
+        "release":"5"
     },
     "redirections":{
         "root":"https://tromosm.gt.tc/",
@@ -25,5 +25,13 @@
         "welcome_pages":{
             "fluxlan":"https://tromosm.github.io/FluxLAN-welcome-page/"
         }
+    },
+    "profiles":{
+        "github":"https://github.com/tromoSM"
+    },
+    "contact":{
+        "github":"https://github.com/tromoSM",
+        "email":"tromosm7@gmail.com",
+        "other":"https://tromosm.gt.tc/share/"
     }
 }
