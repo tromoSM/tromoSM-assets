@@ -1,7 +1,7 @@
 {
     "manifest":{
-        "last_updated":"26.05.21",
-        "release":"3"
+        "last_updated":"26.05.26",
+        "release":"4"
     },
     "redirections":{
         "root":"https://tromosm.gt.tc/",
@@ -21,6 +21,9 @@
             "cryptivisx":"https://tromosm.gt.tc/projects/cryptivisx/",
             "frosted-google":"https://tromosm.gt.tc/projects/frosted-google/"
         },
-        "share":"https://tromosm.gt.tc/share/"
+        "share":"https://tromosm.gt.tc/share/",
+        "welcome_pages":{
+            "fluxlan":"https://tromosm.github.io/FluxLAN-welcome-page/"
+        }
     }
 }
