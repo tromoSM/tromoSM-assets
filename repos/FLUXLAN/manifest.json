@@ -1,7 +1,7 @@
 {
     "manifest":{
-        "last_updated":"26.05.09",
-        "release":"2"
+        "last_updated":"26.05.27",
+        "release":"3"
     },
     "main":{
         "version":"v0.9 pre",
@@ -48,6 +48,13 @@
                 "link":"https://raw.githubusercontent.com/tromoSM/FluxLAN/4e8491abb6d56dcba3cae3703205b580abd55914/static/Assets/logo.svg",
                 "type":"svg"
             }
+        }
+    },
+    "legal":{
+        "privacy_policy":{
+            "version":"1",
+            "innerhtml":"<h1><strong>Privacy statement</strong></h1><p>This application shares limited technical information once during setup, including:</p><ul><li>Application version</li><li>Operating system</li><li>Application build information</li></ul><p>This information is used only to help improve compatibility, stability, and overall support across different platforms and releases.</p>",
+            "last_updated":"26.05.27"
         }
     },
     "license":"Apache 2.0",
