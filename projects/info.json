@@ -1,0 +1,33 @@
+{
+    "manifest":{
+        "last_updated":"26.06.07",
+        "release":"1"
+    },
+    "latest":{
+        "title":"Projects",
+        "list":[
+            "YT-Premium-Patch",
+            "XcreenDesk",
+            "CryptivisX",
+            "HostTalk",
+            "EasyPycode",
+            "better-jellyfin-ui",
+            "SM.$PY",
+            "BlankTools",
+            "better-Firefox",
+            "dynamicTab",
+            "socialLink",
+            "SM.css",
+            "Frosted-google"
+        ]
+    },
+    "upcoming":{
+        "title":"Upcoming projects",
+        "list":[
+        "FluxLAN"
+        ]
+    },
+    "autofill":[
+        "FluxLAN"
+    ]
+}
