@@ -1,7 +1,7 @@
 {
     "manifest":{
-        "last_updated":"26.05.26",
-        "release":"5"
+        "last_updated":"26.06.07",
+        "release":"7"
     },
     "redirections":{
         "root":"https://tromosm.gt.tc/",
@@ -35,7 +35,14 @@
         "other":"https://tromosm.gt.tc/share/"
     },
     "structure":{
+        "replace":"{REPO}",
         "info":"https://raw.githubusercontent.com/tromoSM/tromoSM-assets/refs/heads/main/repos/{REPO}/manifest.json",
         "icon":"https://github.com/tromoSM/tromoSM-assets/blob/main/repos/{REPO}/high.png?raw=true"
-    }
+    },
+    "supported_repos":[
+        "BETTER-JELLYFIN-UI",
+        "FLUXLAN",
+        "YT-PREMIUM-PATCH",
+        "CRYPTIVISX"
+    ]
 }
