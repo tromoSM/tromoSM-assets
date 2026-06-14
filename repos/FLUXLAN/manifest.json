@@ -1,7 +1,7 @@
 {
     "manifest":{
         "last_updated":"26.06.14",
-        "release":"6"
+        "release":"7"
     },
     "main":{
         "version":"v0.9 pre",
@@ -18,9 +18,9 @@
         "update_features":[],
         "security_patch":false,
         "update_url":{
-            "performance":"https://test.com/perf",
-            "lite":"https://test.com/lite"
-            }
+            "performance":"",
+            "lite":""
+        }
     },
     "icon":{
         "type":"transparent"
