@@ -1,7 +1,7 @@
 {
     "manifest":{
         "last_updated":"26.06.14",
-        "release":"7"
+        "release":"8"
     },
     "main":{
         "version":"v0.9 pre",
@@ -55,9 +55,9 @@
     },
     "legal":{
         "privacy_policy":{
-            "version":"3",
-            "innerhtml":"<h1><strong>Privacy statement</strong></h1> <p>This application shares limited technical information once during setup, including:</p> <ul><li>Application version</li><li>OS name and version</li><li>Application build information</li> </ul> <p warning>example : v1.0(stable) Windows 10_win32</p> <p>This information is used only to help improve compatibility, stability, and overall support across different platforms and releases.</p>",
-            "last_updated":"26.06.09"
+            "version":"4",
+            "innerhtml":"<h1><strong>Privacy statement</strong></h1> <p>This application shares limited technical information once during setup, including:</p> <ul><li>Application version</li><li>OS name and version</li><li>Application build information</li> </ul> <p warning>example : v1.0(stable/lite) Windows 10_win32</p> <p>This information is used only to help improve compatibility, stability, and overall support across different platforms and releases.</p>",
+            "last_updated":"26.06.14"
         }
     },
     "license":"Apache 2.0",
