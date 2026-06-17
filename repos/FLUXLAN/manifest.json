@@ -1,7 +1,7 @@
 {
     "manifest":{
-        "last_updated":"26.06.14",
-        "release":"8"
+        "last_updated":"26.06.17",
+        "release":"9"
     },
     "main":{
         "version":"v0.9 pre",
@@ -58,6 +58,11 @@
             "version":"4",
             "innerhtml":"<h1><strong>Privacy statement</strong></h1> <p>This application shares limited technical information once during setup, including:</p> <ul><li>Application version</li><li>OS name and version</li><li>Application build information</li> </ul> <p warning>example : v1.0(stable/lite) Windows 10_win32</p> <p>This information is used only to help improve compatibility, stability, and overall support across different platforms and releases.</p>",
             "last_updated":"26.06.14"
+        },
+        "terms_of_service":{
+            "version":"1",
+            "innerhtml":"By using this app, you agree to use it only for lawful purposes. You are responsible for any cameras, devices, and content connected to your account. The app is provided \"as is\" without guarantees of uninterrupted service or complete security. We may update, modify, or discontinue features at any time. You must not use the app to violate privacy laws, access devices without permission, or engage in illegal activities. We are not responsible for any loss, damage, or unauthorized access resulting from the use of the app. By continuing to use the app, you agree to these terms.",
+            "last_updated":"26.06.17"
         }
     },
     "license":"Apache 2.0",
