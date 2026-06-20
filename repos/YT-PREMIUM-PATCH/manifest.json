@@ -1,15 +1,71 @@
 {
     "manifest":{
-        "last_updated":"26.04.19",
-        "release":"1"
+        "last_updated":"26.06.21",
+        "release":"2"
     },
     "main":{
-        "version":"v1.3",
+        "version":"v1.5",
         "compatibleWith":[
             ["2.20260409.02.00",["yt-web"]]
         ],
-        "github":"https://github.com/tromoSM/better-jellyfin-ui",
+        "github":"https://github.com/tromoSM/YT-Premium-Patch/",
         "page":"https://addons.mozilla.org/addon/yt-premium/"
+    },
+    "update":{
+        "javascript":{
+            "update-count": 6,
+            "beta":false,
+            "update_date":"2026.06.16",
+            "update_main":"features",
+            "update_features":[
+                "Full mobile compatibility",
+                "Improved banner and premium popup targeting",
+                "Auto refreshing for mobile",
+                "Premium logo adding and refreshing on every logo rather than only one",
+                "Improved text targeting on buttons like 'Try Premium' to be dynamic instead of static text matching"
+            ],
+            "security_patch":false,
+            "update_url":"https://raw.githubusercontent.com/tromoSM/YT-Premium-Patch/main/main.js" 
+        },
+        "mozilla_addons":{
+            "update-count": 6,
+            "beta":false,
+            "update_date":"2026.06.16",
+            "update_main":"features",
+            "update_features":[
+                "Full mobile compatibility",
+                "Improved banner and premium popup targeting",
+                "Auto refreshing for mobile",
+                "Premium logo adding and refreshing on every logo rather than only one",
+                "Improved text targeting on buttons like 'Try Premium' to be dynamic instead of static text matching"
+            ],
+            "security_patch":false,
+            "update_url":"https://addons.mozilla.org/addon/yt-premium/" 
+        },
+        "safari":{
+            "platforms_specific":{
+                "apple_shortcuts":{
+                    "Build":"crossplaform(stable/public)",
+                    "platform":"iOS/macOS/iPadOS",
+                    "AutoUpdate":"not supported",
+                    "UpdateCheck":"manual/options",
+                    "Activation":"manual/each"
+                }
+            },
+            "update-count": 1,
+            "beta":false,
+            "update_date":"2026.06.21",
+            "update_main":"initial release",
+            "update_features":[
+                "example",
+                "example",
+                "example",
+                "example",
+                "example"
+            ],
+            "security_patch":false,
+            "update_url":"https://addons.mozilla.org/addon/yt-premium/" 
+        }
     },
     "icon":{
         "type":"rounded"
