@@ -52,7 +52,7 @@
                     "Activation":"manual/each"
                 }
             },
-            "update-count": 1,
+            "update_count": 1,
             "beta":false,
             "update_date":"2026.06.21",
             "update_main":"initial release",
@@ -64,7 +64,7 @@
                 "example"
             ],
             "security_patch":false,
-            "update_url":"https://addons.mozilla.org/addon/yt-premium/" 
+            "update_url":"https://example.com/" 
         }
     },
     "icon":{
