@@ -49,7 +49,11 @@
                     "platform":"iOS/macOS/iPadOS",
                     "AutoUpdate":"not supported",
                     "UpdateCheck":"manual/options",
-                    "Activation":"manual/each"
+                    "Activation":"manual/each",
+                    "ClientVersions":{
+                        "WFWorkflowMinimumClientVersion":1113,
+                        "WFWorkflowClientVersion":"1146.16.2.2"
+                    }
                 }
             },
             "update_count": 1,
