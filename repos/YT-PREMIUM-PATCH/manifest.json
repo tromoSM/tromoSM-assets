@@ -61,14 +61,10 @@
             "update_date":"2026.06.21",
             "update_main":"initial release",
             "update_features":[
-                "example",
-                "example",
-                "example",
-                "example",
-                "example"
+                "first release"
             ],
             "security_patch":false,
-            "update_url":"https://example.com/" 
+            "update_url":"https://www.icloud.com/shortcuts/91e108dc56c448ad9aede902e449a10a" 
         }
     },
     "icon":{
