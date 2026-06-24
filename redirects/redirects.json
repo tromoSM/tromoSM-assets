@@ -4,7 +4,22 @@
         "release":"1"
     },
     "redirects":{
-        "main":"https://tromosm.gt.tc/"
+        "main":"https://tromosm.gt.tc/",
+        "download":{
+            "version":"v1.0.0",
+            "fluxlan":{
+                "lite":{
+                    "windows":"https://github.com/tromoSM/FluxLAN/releases/download/v1.0/FluxLAN-Lite-Windows.exe",
+                    "mac":"https://github.com/tromoSM/FluxLAN/releases/download/v1.0/FluxLAN-Lite-MacOS",
+                    "ubuntu":"https://github.com/tromoSM/FluxLAN/releases/download/v1.0/FluxLAN-Lite-Ubuntu.deb"
+                },
+                "perf":{
+                    "windows":"https://github.com/tromoSM/FluxLAN/releases/download/v1.0/FluxLAN-Windows.exe",
+                    "mac":"https://github.com/tromoSM/FluxLAN/releases/download/v1.0/FluxLAN-MacOS",
+                    "ubuntu":"https://github.com/tromoSM/FluxLAN/releases/download/v1.0/FluxLAN-Ubuntu.deb"
+                }
+            }
+        }
     },
     "used_by":[
         "https://tromosm.github.io/redirects/"
