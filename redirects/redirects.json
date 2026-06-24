@@ -1,0 +1,12 @@
+{
+    "manifest":{
+        "last_updated":"26.06.07",
+        "release":"1"
+    },
+    "redirects":{
+        "main":"https://tromosm.gt.tc/"
+    },
+    "used_by":[
+        "https://tromosm.github.io/redirects/"
+    ]
+}
