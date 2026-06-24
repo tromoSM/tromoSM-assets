@@ -1,25 +1,25 @@
 {
     "manifest":{
-        "last_updated":"26.06.17",
-        "release":"9"
+        "last_updated":"26.06.25",
+        "release":"10"
     },
     "main":{
-        "version":"v0.9 pre",
-        "version_release":"0",
+        "version":"v1",
+        "version_release":"1",
         "compatibleWith":[],
         "github":"https://github.com/tromoSM/FluxLAN",
         "page":""
     },
     "update":{
-        "update-count": 0,
+        "update-count": 1,
         "beta":false,
-        "update_date":"",
-        "update_main":"",
+        "update_date":"2026.06.25",
+        "update_main":"first release",
         "update_features":[],
         "security_patch":false,
         "update_url":{
-            "performance":"",
-            "lite":""
+            "performance":"https://github.com/tromoSM/FluxLAN/releases/download/v1.0/FluxLAN-Windows.exe",
+            "lite":"https://github.com/tromoSM/FluxLAN/releases/download/v1.0/FluxLAN-Lite-Windows.exe"
         }
     },
     "icon":{
