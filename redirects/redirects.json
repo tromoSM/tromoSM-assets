@@ -6,8 +6,8 @@
     "redirects":{
         "main":"https://tromosm.gt.tc/",
         "download":{
-            "version":"v1.0.0",
             "fluxlan":{
+                "version":"v1.0.0",
                 "lite":{
                     "windows":"https://github.com/tromoSM/FluxLAN/releases/download/v1.0/FluxLAN-Lite-Windows.exe",
                     "mac":"https://github.com/tromoSM/FluxLAN/releases/download/v1.0/FluxLAN-Lite-MacOS",
