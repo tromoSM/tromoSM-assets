@@ -1,7 +1,7 @@
 {
     "manifest":{
-        "last_updated":"26.06.07",
-        "release":"1"
+        "last_updated":"26.06.25",
+        "release":"2"
     },
     "redirects":{
         "main":"https://tromosm.gt.tc/",
@@ -18,6 +18,16 @@
                     "mac":"https://github.com/tromoSM/FluxLAN/releases/download/v1.0/FluxLAN-MacOS",
                     "ubuntu":"https://github.com/tromoSM/FluxLAN/releases/download/v1.0/FluxLAN-Ubuntu.deb"
                 }
+            }
+        }
+    },
+    "branding":{
+        "splash_mark":{
+            "structure":"https://github.com/tromoSM/tromoSM-assets/blob/main/repos/{REPO}/high.png?raw=true",
+            "replace":"{REPO}",
+            "repos":{
+              "fluxlan":true,
+              "better_jellyfin_ui":false
             }
         }
     },
