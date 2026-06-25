@@ -1,7 +1,7 @@
 {
     "manifest":{
         "last_updated":"26.06.25",
-        "release":"2"
+        "release":"3"
     },
     "redirects":{
         "main":"https://tromosm.gt.tc/",
@@ -22,7 +22,7 @@
         }
     },
     "branding":{
-        "splash_mark":{
+        "icon":{
             "structure":"https://github.com/tromoSM/tromoSM-assets/blob/main/repos/{REPO}/high.png?raw=true",
             "replace":"{REPO}",
             "repos":{
