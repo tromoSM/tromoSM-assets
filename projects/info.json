@@ -1,11 +1,12 @@
 {
     "manifest":{
-        "last_updated":"26.06.07",
-        "release":"1"
+        "last_updated":"26.06.29",
+        "release":"2"
     },
     "latest":{
         "title":"Projects",
         "list":[
+            "FluxLAN",
             "YT-Premium-Patch",
             "XcreenDesk",
             "CryptivisX",
@@ -23,9 +24,7 @@
     },
     "upcoming":{
         "title":"Upcoming projects",
-        "list":[
-        "FluxLAN"
-        ]
+        "list":[]
     },
     "autofill":[
         "FluxLAN"
